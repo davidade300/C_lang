@@ -45,6 +45,12 @@ int main(void) {
    }
    /* exibe resultados em forma tabular */
    printf("%s%13s\n", "Face", "Frequencia");
-   printf();
+   printf("   1%13d\n", freq_1);
+   printf("   2%13d\n", freq_2);
+   printf("   3%13d\n", freq_3);
+   printf("   4%13d\n", freq_4);
+   printf("   5%13d\n", freq_5);
+   printf("   6%13d\n", freq_6);
+
    return 0;
-}
+} /* fim do main */
