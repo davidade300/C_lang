@@ -1,3 +1,4 @@
+#include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -9,7 +10,8 @@ int main(void) {
    printf("Digite a semente:");
    scanf("%u", &seed);
 
-   srand(seed);
+    /* srand(seed);*/  //inicia o gerador de numero aleatorio
+   srand(time(NULL)); /* faz com que o computador leia o seu clock para obter o valor da semente automaticamente */
 
    for(i = 1; i <= 10; i++) {
       /* escolhe um numero aleatorio de 1 a 6 e imprime*/
